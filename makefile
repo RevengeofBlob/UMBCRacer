@@ -1,8 +1,8 @@
 CXX = g++
 CXXFLAGS = -Wall
 
-proj2: proj2.cpp Race.o Track.o Player.o
-	$(CXX) $(CXXFLAGS) proj2.cpp Race.o Track.o Player.o -o proj2
+umbcracer: umbcracer.cpp Race.o Track.o Player.o
+	$(CXX) $(CXXFLAGS) umbcracer.cpp Race.o Track.o Player.o -o umbcracer
 
 Race.o: Race.h Race.cpp Track.o Player.o
 	$(CXX) $(CXXFLAGS) -c Race.cpp
@@ -17,4 +17,4 @@ clean:
 	rm *~
 
 run:
-	./proj2
+	./umbcracer
